@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import ArticlePage from "./pages/ArticlePage";
-import ArticlesList from "./pages/ArticlesList";
+import ArticlesListPage from "./pages/ArticlesListPage";
 import NavBar from "./NavBar";
 // comment
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <div id="page-body">
           <Route path="/" component={HomePage} exact />
           <Route path="/about" component={AboutPage} />
-          <Route path="/articles-list" component={ArticlesList} exact />
+          <Route path="/articles-list" component={ArticlesListPage} exact />
           <Route path="/article/:name" component={ArticlePage} exact />
         </div>
       </div>
