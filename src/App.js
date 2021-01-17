@@ -5,11 +5,13 @@ import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import ArticlePage from "./pages/ArticlePage";
 import ArticlesList from "./pages/ArticlesList";
+import NavBar from "./NavBar";
 // comment
 const App = () => {
   return (
     <Router>
       <div className="App">
+      <NavBar/>
         <div id="page-body">
           <Route path="/" component={HomePage} exact />
           <Route path="/about" component={AboutPage} />
